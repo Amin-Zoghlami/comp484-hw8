@@ -63,8 +63,31 @@ h3 {
     min-height: 225px;
 }
 
-/* Header & Footer
+/* Navigation, Header, & Footer
 ------------------------------------*/
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #1F3A4D;
+    padding: 12px 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #E9A23B;
+}
+
 header,
 footer {
     background-color: #1F3A4D;
@@ -95,6 +118,11 @@ header h2 {
     color: #E9A23B;
     display: inline-block;
     padding: 10px;
+    font-size: 1.8rem;
+}
+
+.contact-info a:hover {
+    color: #fff;
 }
 
 /* Work Experience
@@ -102,6 +130,23 @@ header h2 {
 .work-experience {
     background-color: #F4EFE6;
     padding: 40px 20px;
+}
+
+/* Projects
+------------------------------------*/
+.projects {
+    background:
+        linear-gradient(
+            rgba(244, 239, 230, 0.8),
+            rgba(244, 239, 230, 0.8)
+        ),
+        url("../images/misty-mountains.png") center/cover no-repeat;
+    background-attachment: fixed;
+    padding: 40px 20px;
+}
+
+.projects .column-narrow {
+    clear: both;
 }
 
 /* Education

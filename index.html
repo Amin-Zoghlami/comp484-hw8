@@ -7,10 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- // Intro -->
+    <nav>    
+        <a href="#education">Education</a>
+        <a href="#work-experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="Resume.pdf" download>Download Resume</a>
+    </nav>
     <header>
         <div class="content-wrap">
             <div class="column-narrow">
@@ -26,8 +33,25 @@
     
     
     <main> 
+        <!-- // Education -->
+        <section class="education" id="education">
+            <div class="content-wrap">
+                <h2>Education</h2>
+
+                <!-- School details: copy this whole block to add more schools. -->
+                <h3>California State University, Northridge</h3>
+                <p>Bachelor of Science in Computer Science</p>
+                <p>2023-2027</p>
+            
+                <!-- Add as many paragraphs as you need. -->
+                <p>Concentrations: Web Development and Information Technology</p>
+                <p>GPA: 3.94/4.00, Dean’s List</p>
+                <!-- End of school details. -->
+            </div>
+        </section>
+   
         <!-- // Work Experience -->
-        <section class="work-experience">
+        <section class="work-experience" id="work-experience">
             <div class="content-wrap">
                 <h2>Work Experience</h2>
                 <div class="column-narrow">
@@ -50,39 +74,90 @@
             </div> 
         </section>
 
-
-        <!-- // Education -->
-        <section class="education">
-            <div class="content-wrap">
-                <h2>Education</h2>
-
-                <!-- School details: copy this whole block to add more schools. -->
-                <h3>California State University, Northridge</h3>
-                <p>Bachelor of Science in Computer Science</p>
-                <p>2023-2027</p>
-            
-                <!-- Add as many paragraphs as you need. -->
-                <p>Concentrations: Web Development and Information Technology</p>
-                <p>GPA: 3.94/4.00, Dean’s List</p>
-                <!-- End of school details. -->
-            </div>
+        <!-- // Projects -->
+        <section class="projects" id="projects">
+                <div class="content-wrap">
+                    <h2>Projects</h2>
+                    <!-- Project Details: copy this whole block to add more projects -->
+                    <div class="column-narrow">  
+                        <h3>Message Board | Node.js, Express, EJS, JavaScript, HTML, CSS</h3>
+                        <p>Solo Project</p>
+                        <p>April 2026 - May 2026</p>
+                    </div>
+                    <div class="column-wide">
+                        <ul>
+                            <li>Built a multi-page message board with Node.js and Express, enabling users to create and view messages.</li>
+                            <li>Implemented Express routing and EJS templates to dynamically render message data on the server.</li>
+                        </ul>
+                    </div>
+                    <!-- end of Project Details block. -->     
+                    <!-- Project Details: copy this whole block to add more projects -->
+                    <div class="column-narrow">
+                        <h3>Baseball Shopping Cart | React, JavaScript, HTML, CSS</h3>
+                        <p>Solo Project</p>
+                        <p>Dec 2025 - Mar 2026</p>
+                    </div>
+                    <div class="column-wide">
+                        <ul>
+                            <li>Built a React single-page shopping application for browsing baseball equipment and managing a shopping cart.</li>
+                            <li>Implemented client-side state management for adding, removing, and adjusting product quantities.</li>
+                        </ul>
+                    </div>
+                    <!-- end of Project Details block. -->     
+                    <!-- Project Details: copy this whole block to add more projects -->
+                    <div class="column-narrow">
+                        <h3>Baseball Memory Game | React, JavaScript, HTML, CSS, REST API</h3>
+                        <p>Solo Project</p>
+                        <p>Mar 2025 - Jul 2025</p>
+                    </div>
+                    <div class="column-wide">
+                        <ul>
+                            <li>Built a React memory game that retrieves 2025 player data from the MLB API and randomly displays players.</li>
+                            <li>Implemented game-state management and real-time score tracking to manage gameplay and player progress.</li>
+                        </ul>
+                    </div>
+                    <!-- end of Project Details block. -->     
+                    <!-- Project Details: copy this whole block to add more projects -->
+                    <div class="column-narrow">
+                        <h3>Battleship | JavaScript, HTML, CSS, Jest</h3>
+                        <p>Solo Project</p>
+                        <p>Jan 2025 - Feb 2025</p>
+                    </div>
+                    <div class="column-wide">
+                        <ul>
+                            <li>Developed a Player vs. Computer Battleship game with interactive gameplay and responsive UI.</li>
+                            <li>Applied Test-Driven Development (TDD) with Jest to validate game logic and identify errors.</li>
+                        </ul>
+                    </div>
+                    <!-- end of Project Details block. --> 
+                </div>    
         </section>
     </main>
+
+
     
     <!-- // Footer & contact info -->
     <footer>
         <div class="content-wrap">
             <h2>Let's Keep in Touch!</h2>
         
-            <!-- Social media and contact links. Add or remove any networks. -->
+            <!-- Social media and contact links.-->
             <div class="contact-info">
-                <a href="mailto:amin.zoghlami.361@my.csun.edu">amin.zoghlami.361@my.csun.edu</a>
-                <a href="https://github.com/Amin-Zoghlami" target="_blank">Github</a>
-                <a href="https://www.linkedin.com/in/amin-zoghlami-9bb677351" target="_blank">LinkedIn</a>
-                <a href="https://app.joinhandshake.com/profiles/af9akb" target="_blank">Handshake</a>      
+                <a href="mailto:amin.zoghlami.361@my.csun.edu" aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://github.com/Amin-Zoghlami" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/amin-zoghlami-9bb677351" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://app.joinhandshake.com/profiles/af9akb" target="_blank" rel="noopener noreferrer" aria-label="Handshake">
+                    <i class="fa-solid fa-handshake"></i>
+                </a>
             </div>
-
-            <p>Copyright 2026 by Amin Zoghlami</p>
+            
+            <p>&copy; 2026 by Amin Zoghlami.</p>
         </div>
     </footer>
 </body>
